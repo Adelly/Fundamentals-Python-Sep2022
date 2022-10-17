@@ -1,0 +1,29 @@
+change = float(input())
+coins_change = round(change * 100) #превръщаме всичко в стотинки - round, за да не ни счупи кода float 56.000001
+coins_counter = 0
+while coins_change > 0:
+    if coins_change >= 200:
+        coins_change -= 200
+        coins_counter += 1
+    elif coins_change >= 100:
+        coins_change -= 100
+        coins_counter += 1
+    elif coins_change >= 50:
+        coins_change -= 50
+        coins_counter += 1
+    elif coins_change >= 20:
+        coins_change -= 20
+        coins_counter += 1
+    elif coins_change >= 10:
+        coins_change -= 10
+        coins_counter += 1
+    elif coins_change >= 5:
+        coins_change -= 5
+        coins_counter += 1
+    elif coins_change >= 2:
+        coins_change -= 2
+        coins_counter += 1
+    elif coins_change >= 1:
+        coins_change -= 1
+        coins_counter += 1
+print(coins_counter)
